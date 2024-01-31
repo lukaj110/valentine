@@ -96,9 +96,14 @@ function App() {
               }`}
               onClick={() => {
                 setSaidYes(true);
-                for (let i = 0; i < 10; i++) {
+
+                setInterval(() => {
                   addHeart(HeartType.Red);
-                }
+                }, 100);
+
+                setInterval(() => {
+                  addHeart(HeartType.Purple);
+                }, 200);
               }}>
               yes {hoveringYes ? "💜" : null}
             </button>

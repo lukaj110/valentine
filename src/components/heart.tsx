@@ -53,7 +53,7 @@ const Heart = ({ heartType }: { heartType: HeartType }) => {
       } else return 100;
     }
 
-    if (heartType === HeartType.Purple) {
+    if (heartType !== HeartType.Broken) {
       return 100;
     }
 
